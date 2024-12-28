@@ -5,27 +5,28 @@
 using namespace std;
 
 int main (){
-    int numero; 
-    cout << "Insira um numero"; 
-    cin >> numero;
-    if(numero < 0 ){
-        cout << "numeros negativos nao tem raiz." ;
-    }else {
-        for (int i = 0;  i <= numero; i++){
-            cout << i;
-            ++i;
-
-            
+    float numeroUm, count = 0 , numeroDois, div; 
+        count++;
+        cout << "Insira um numero\n"; 
+        cin >> numeroUm;
+        cout << numeroUm;
+        cout << "\nInsira o segundo numero";
+        cin >> numeroDois;
+        if(numeroDois == 0){
+            while(numeroDois == 0) {
+                cout << "o segundo numero precisa ser diferente de 0: \n";
+                cin >> numeroDois;
+            }
         }
+        div = numeroUm / numeroDois;
+        cout << div;
+    
 
-
-    } 
 /*
     1 - dividir os numeros
     2 - pegar 
 
 */
-
 
 return 0;
 }
