@@ -17,6 +17,6 @@ int main() {
     mediaSal = mediaSal / qtdFunc;
     cout << "media salarial: " << mediaSal;
 
-
+    return 0;
 
 }
