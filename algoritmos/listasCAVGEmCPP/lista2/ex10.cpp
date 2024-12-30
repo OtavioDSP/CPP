@@ -26,5 +26,5 @@ int main(){
 
     }while(i<50);
 
-
+return 0;
 }
