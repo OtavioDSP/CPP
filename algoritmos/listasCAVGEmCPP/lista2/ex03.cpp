@@ -11,4 +11,5 @@ int main(){
                 cout << i << endl;
             }
         }while(i<20);
+ return 0;
 }

@@ -9,4 +9,5 @@ int main (){
             i++;
             cout << i << endl;
         }while(i<10);
+ return 0;
 }
