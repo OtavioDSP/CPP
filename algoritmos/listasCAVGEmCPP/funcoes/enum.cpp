@@ -3,8 +3,12 @@
 using namespace std;
 
 int main() {
-    int num1, num2, soma;
+    enum armas{fuzil=100, revolver=5, rifle, escopeta};
 
+    armas armaSel;
+
+    armaSel = revolver;
+    cout << "Arma selecionada: " << armaSel << endl;
 
     return 0;
 }
