@@ -30,10 +30,10 @@ void  aviao::ini(int tp){
 
 int main(){
     aviao *av1 = new aviao();
+    aviao *av2 = new aviao();
+    av2->ini(1);
     av1->ini(3);
     cout << av1->velMax << endl;
-    
-    
-
+    cout << av2->velMax << endl;
     return 0;
 }
