@@ -1,39 +1,17 @@
 #include <iostream>
+#include "torresgemeas.h"
 
 using namespace std;
 
-class aviao{
-    public: 
-        int vel = 0;
-        int velMax;
-        string tipo;
-        void ini(int tp);
-    private:
-        
-};
-
-void  aviao::ini(int tp){
-
-    if (tp == 1){
-        this->velMax = 1000;
-        this->tipo = "Jato";
-    }else if(tp == 2){
-        this->velMax = 350;
-        this->tipo = "Monomotor";
-    }else if (tp == 3){
-        this->velMax = 180;
-        this->tipo = "Planador";
-    }
-
-
-}
 
 int main(){
-    aviao *av1 = new aviao();
-    aviao *av2 = new aviao();
-    av2->ini(1);
-    av1->ini(3);
-    cout << av1->velMax << endl;
-    cout << av2->velMax << endl;
-    return 0;
+    aviao *Boing = new aviao(1);
+    aviao *Embraer = new aviao(2);
+    aviao *Chinook = new aviao(4);
+    
+    Boing->imprimir();
+    Embraer->imprimir();
+    Chinook->imprimir();
+
+return 0;
 }
