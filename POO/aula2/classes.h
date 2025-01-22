@@ -24,9 +24,6 @@ private:
 
 };
 
-
-
-
 int veiculo::getVelMax(){
     return velMax;
 }
@@ -60,14 +57,6 @@ void veiculo::setArma(bool ar){
 }
 
 
-
-
-
-
-
-
-
-
 class moto:public veiculo{
 
 public:
@@ -84,6 +73,46 @@ moto::moto(){
     setArma(false);
 
 
+};
+
+class carro:public veiculo{
+public:
+    carro();
+};
+carro::carro(){
+
+    vel = 0;
+    blind = 0;
+    rodas = 4;
+    setTipo(2);
+    setVelMax(399);
+    setArma(false);
+
 }
+
+class tanque:public veiculo{
+public:
+    tanque();
+
+};
+tanque::tanque(){
+    vel = 0;
+    blind = 1;
+    rodas = 8;
+    setTipo(3);
+    setVelMax(100);
+    setArma(true);
+
+}
+
+
+
+
+
+
+
+
+
+
 
 #endif
