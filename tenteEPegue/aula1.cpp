@@ -12,9 +12,8 @@ int main(){
     try{ 
         cout << divide(n1,n2) << endl;
     }
-    catch(exception& e)
-    {
-        cout << "Erro: " << e.what() << endl;
+    catch(const char* e){
+        cout << "Erro: " << e << endl;
     }
     
 
@@ -23,5 +22,10 @@ return 0;
 }
 
 double divide(double n1, double n2){
+    
+    if(n2 == 0){
+        throw "erro de divisao por 0";
+
+    }
     return n1/n2;
 };
